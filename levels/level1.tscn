@@ -1,0 +1,49 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://scenes/Table.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Book.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/RoomBase.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/level1/WallWithDoorway.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/level1/Door.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/Workbench.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scripts/level1.gd" type="Script" id=8]
+[ext_resource path="res://scenes/Flag.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scripts/Flag.gd" type="Script" id=10]
+
+[node name="Level" type="Spatial"]
+script = ExtResource( 8 )
+__meta__ = {
+"Label": "level1"
+}
+
+[node name="Player" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.189655, 0, 0, 0, 0.189655, 0, 0, 0, 0.189655, 0, 0.04656, 0.333428 )
+
+[node name="Room" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.09023e-07, 0, -9.35735, 0, 9.35735, 0, 9.35735, 0, -4.09023e-07, 0, 0, 0 )
+
+[node name="Table" parent="Room" instance=ExtResource( 1 )]
+transform = Transform( 0.275903, 0, 5.24025e-14, 0, 0.275903, 0, -5.24025e-14, 0, 0.275903, -0.075784, 0.000515134, 3.31262e-09 )
+
+[node name="Book" parent="Room/Table" instance=ExtResource( 2 )]
+transform = Transform( 0.563094, 0, 0.499604, 0, 0.752781, 0, -0.499604, 0, 0.563094, 0.000353754, 0.116711, 0.0727329 )
+
+[node name="Item" type="Position3D" parent="Room/Table"]
+transform = Transform( -4.37114e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.37114e-09, 0.0116923, 0.111273, -0.0685342 )
+
+[node name="Workbench" parent="Room" instance=ExtResource( 6 )]
+transform = Transform( -1.23686e-08, 0, 0.282961, 0, 0.282961, 0, -0.282961, 0, -1.23686e-08, 0.0437802, -0.000408885, 0.0659614 )
+
+[node name="Door" parent="." instance=ExtResource( 5 )]
+transform = Transform( 9.85558, 0, 0, 0, 9.85558, 0, 0, 0, 9.85558, 1.01362, 0, 0.153392 )
+
+[node name="Exit" parent="." instance=ExtResource( 3 )]
+transform = Transform( -3.8137e-07, 0, 8.72474, 0, 8.72474, 0, -8.72474, 0, -3.8137e-07, 1.97313, 0, 0 )
+
+[node name="Flag" parent="Exit" instance=ExtResource( 9 )]
+transform = Transform( -0.171786, -0.00135077, -0.133682, -0.00125857, 0.217672, -0.000582134, 0.133683, 0.000313514, -0.171791, -0.00664289, 0.00243876, 0.00481489 )
+script = ExtResource( 10 )
+
+[node name="wallWithDoorway" parent="." instance=ExtResource( 4 )]
+transform = Transform( 9.80516, 0, 0, 0, 9.80516, 0, 0, 0, 9.80516, 1.02218, 0, 0.150676 )

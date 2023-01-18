@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://models/room/floor/lambert1.material" type="Material" id=1]
+[ext_resource path="res://models/room/floor/floor_lambert1_BaseColor.png" type="Texture" id=2]
+[ext_resource path="res://models/room/floor/floor_lambert1_Normal.png" type="Texture" id=3]
+[ext_resource path="res://models/room/floor/floor_lambert1_Metallic.png" type="Texture" id=4]
+[ext_resource path="res://models/room/floor/floor_lambert1_Height.exr" type="Texture" id=5]
+[ext_resource path="res://models/room/floor/floor_lambert1_Roughness.png" type="Texture" id=6]
+[ext_resource path="res://models/room/floor/floor_lambert1_AO.png" type="Texture" id=7]
+
+[sub_resource type="ConvexPolygonShape" id=2]
+points = PoolVector3Array( 0.110059, 0.00328567, 0.110066, 0.110059, 0, 0.110066, 0.110059, 0.00328567, -0.110066, -0.109487, 0.00328567, 0.110066, -0.109487, 0, 0.110066, 0.110059, 0, -0.110066, -0.109487, 0.00328567, -0.110066, -0.109487, 0, -0.110066 )
+
+[sub_resource type="ArrayMesh" id=1]
+resource_name = "polySurface5Mesh"
+surfaces/0 = {
+"aabb": AABB( -0.109487, 0, -0.110066, 0.219547, 0.00329567, 0.220141 ),
+"array_data": PoolByteArray( 194, 58, 224, 189, 101, 84, 87, 59, 34, 106, 225, 61, 0, 127, 127, 63, 127, 23, 251, 59, 216, 102, 225, 61, 101, 84, 87, 59, 34, 106, 225, 61, 0, 127, 127, 63, 242, 55, 251, 59, 194, 58, 224, 189, 101, 84, 87, 59, 34, 106, 225, 189, 0, 127, 127, 63, 127, 23, 3, 56, 216, 102, 225, 61, 101, 84, 87, 59, 34, 106, 225, 189, 0, 127, 127, 63, 242, 55, 3, 56, 194, 58, 224, 189, 0, 0, 0, 128, 34, 106, 225, 189, 129, 0, 0, 127, 7, 56, 3, 56, 194, 58, 224, 189, 0, 0, 0, 128, 34, 106, 225, 61, 129, 0, 0, 127, 7, 56, 251, 59, 194, 58, 224, 189, 101, 84, 87, 59, 34, 106, 225, 61, 129, 0, 0, 127, 22, 56, 251, 59, 194, 58, 224, 189, 101, 84, 87, 59, 34, 106, 225, 189, 129, 0, 0, 127, 22, 56, 3, 56, 216, 102, 225, 61, 0, 0, 0, 128, 34, 106, 225, 61, 0, 129, 127, 63, 87, 59, 20, 24, 194, 58, 224, 189, 0, 0, 0, 128, 34, 106, 225, 61, 0, 129, 127, 63, 195, 54, 20, 24, 216, 102, 225, 61, 0, 0, 0, 128, 34, 106, 225, 189, 0, 129, 127, 63, 87, 59, 248, 55, 194, 58, 224, 189, 0, 0, 0, 128, 34, 106, 225, 189, 0, 129, 127, 63, 195, 54, 248, 55, 216, 102, 225, 61, 101, 84, 87, 59, 34, 106, 225, 189, 127, 0, 0, 127, 172, 54, 248, 55, 216, 102, 225, 61, 101, 84, 87, 59, 34, 106, 225, 61, 127, 0, 0, 127, 172, 54, 20, 24, 216, 102, 225, 61, 0, 0, 0, 128, 34, 106, 225, 61, 127, 0, 0, 127, 142, 54, 20, 24, 216, 102, 225, 61, 0, 0, 0, 128, 34, 106, 225, 189, 127, 0, 0, 127, 142, 54, 248, 55, 194, 58, 224, 189, 0, 0, 0, 128, 34, 106, 225, 189, 127, 127, 0, 1, 118, 54, 199, 26, 216, 102, 225, 61, 101, 84, 87, 59, 34, 106, 225, 189, 127, 127, 0, 1, 88, 54, 248, 55, 216, 102, 225, 61, 0, 0, 0, 128, 34, 106, 225, 189, 127, 127, 0, 1, 118, 54, 248, 55, 194, 58, 224, 189, 101, 84, 87, 59, 34, 106, 225, 189, 127, 127, 0, 1, 88, 54, 199, 26, 194, 58, 224, 189, 101, 84, 87, 59, 34, 106, 225, 61, 0, 0, 0, 127, 65, 54, 199, 26, 216, 102, 225, 61, 0, 0, 0, 128, 34, 106, 225, 61, 0, 0, 0, 127, 35, 54, 248, 55, 216, 102, 225, 61, 101, 84, 87, 59, 34, 106, 225, 61, 0, 0, 0, 127, 65, 54, 248, 55, 194, 58, 224, 189, 0, 0, 0, 128, 34, 106, 225, 61, 0, 0, 0, 127, 35, 54, 199, 26 ),
+"array_index_data": PoolByteArray( 0, 0, 2, 0, 1, 0, 1, 0, 2, 0, 3, 0, 4, 0, 6, 0, 5, 0, 6, 0, 4, 0, 7, 0, 8, 0, 10, 0, 9, 0, 9, 0, 10, 0, 11, 0, 12, 0, 14, 0, 13, 0, 14, 0, 12, 0, 15, 0, 16, 0, 18, 0, 17, 0, 17, 0, 19, 0, 16, 0, 20, 0, 22, 0, 21, 0, 21, 0, 23, 0, 20, 0 ),
+"blend_shape_data": [  ],
+"format": 2194711,
+"index_count": 36,
+"material": ExtResource( 1 ),
+"name": "lambert1",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_texture = ExtResource( 2 )
+metallic_texture = ExtResource( 4 )
+roughness_texture = ExtResource( 6 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 3 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 7 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+depth_enabled = true
+depth_scale = 0.05
+depth_deep_parallax = false
+depth_flip_tangent = false
+depth_flip_binormal = false
+depth_texture = ExtResource( 5 )
+
+[node name="floor" type="StaticBody"]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 2 )
+
+[node name="floor" type="MeshInstance" parent="CollisionShape"]
+mesh = SubResource( 1 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 3 )

@@ -1,0 +1,73 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://scripts/Flag.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Workbench.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/level2/Room2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/RoomBase.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/Table.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/Book.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/Flag.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/level1/Door.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scripts/level2.gd" type="Script" id=10]
+[ext_resource path="res://scenes/objects/key.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/Vent.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/Screw.tscn" type="PackedScene" id=13]
+
+[node name="Level" type="Spatial"]
+script = ExtResource( 10 )
+__meta__ = {
+"Label": "level2"
+}
+
+[node name="Exit" parent="." instance=ExtResource( 4 )]
+transform = Transform( -3.45828e-07, 0, 7.91162, 0, 7.91162, 0, -7.91162, 0, -3.45828e-07, 2.37815, 0.00602922, 0 )
+
+[node name="Flag" parent="Exit" instance=ExtResource( 8 )]
+transform = Transform( -0.205228, -0.00161373, -0.159706, -0.00150358, 0.260047, -0.00069546, 0.159707, 0.000374547, -0.205233, 0.0158111, 0.00208794, 0.041659 )
+script = ExtResource( 1 )
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.239522, 0, 0, 0, 0.239522, 0, 0, 0, 0.239522, 0, 0.04656, 0 )
+
+[node name="Room" parent="." instance=ExtResource( 3 )]
+transform = Transform( -8.31976e-07, 0, -19.0334, 0, 10.5052, 0, 10.5052, 0, -4.59197e-07, -0.558704, 0, 0 )
+
+[node name="Table" parent="Room" instance=ExtResource( 6 )]
+transform = Transform( 0.29656, 0, -5.80824e-09, 0, 0.29656, 0, -5.80827e-09, 0, 0.163682, -0.0669388, 0.000556842, -0.0193018 )
+
+[node name="Book" parent="Room/Table" instance=ExtResource( 7 )]
+transform = Transform( 0.563094, 0, 0.499604, 0, 0.752781, 0, -0.499604, 0, 0.563094, 0.000353754, 0.116711, 0.0727329 )
+
+[node name="Item" type="Position3D" parent="Room/Table"]
+transform = Transform( 0.1, 0, 4.44089e-16, 0, 0.1, 0, -4.44089e-16, 0, 0.1, 0.0120293, 0.113142, -0.0681274 )
+
+[node name="Workbench" parent="Room" instance=ExtResource( 2 )]
+transform = Transform( -0.314371, 0, -2.13262e-08, 0, 0.314371, 0, 2.13261e-08, 0, -0.173513, 0.0717338, -0.000441992, 0.0300995 )
+
+[node name="Item" type="Position3D" parent="Room/Workbench"]
+transform = Transform( 0.207868, 0, 0, 0, 0.207868, 0, -4.44089e-15, 0, 0.207868, 0, 0.107706, 0.00869477 )
+
+[node name="Vent" parent="Room" instance=ExtResource( 12 )]
+transform = Transform( 0.471533, 0, -3.37508e-14, 0, 0.537254, 0, -1.77636e-15, 0, 0.537254, -0.000631333, 0.0495834, 0.10258 )
+
+[node name="screw" parent="Room/Vent" instance=ExtResource( 13 )]
+transform = Transform( 0.367117, -1.42109e-14, -8.99973e-22, 0, -1.60472e-08, 0.367117, 9.76996e-15, -0.367117, -1.60472e-08, -0.0264621, 0.0255398, 0.0102883 )
+
+[node name="screw2" parent="Room/Vent" instance=ExtResource( 13 )]
+transform = Transform( 0.367117, -1.42109e-14, -1.16467e-21, 0, -1.60472e-08, 0.367117, 1.15463e-14, -0.367117, -1.60472e-08, 0.0280284, 0.0255398, 0.0102883 )
+
+[node name="screw3" parent="Room/Vent" instance=ExtResource( 13 )]
+transform = Transform( 0.367117, -1.42109e-14, -1.42937e-21, 0, -1.60472e-08, 0.367117, 1.5099e-14, -0.367117, -1.60472e-08, 0.0280284, -0.0249923, 0.0102883 )
+
+[node name="screw4" parent="Room/Vent" instance=ExtResource( 13 )]
+transform = Transform( 0.367117, -1.42109e-14, -1.85288e-21, 0, -1.60472e-08, 0.367117, 1.95399e-14, -0.367117, -1.60472e-08, -0.0269666, -0.0249923, 0.0102883 )
+
+[node name="Door" parent="." instance=ExtResource( 9 )]
+transform = Transform( 16.321, 0, 0, 0, 11.3412, 0, 0, 0, 10.5907, 1.51146, 0, 0 )
+
+[node name="Item" type="Position3D" parent="."]
+transform = Transform( 0.383452, 0, 0, 0, 0.383452, 0, 0, 0, 0.383452, -2.70095, 0.431165, 0 )
+
+[node name="Key" parent="Item" instance=ExtResource( 11 )]
+transform = Transform( 4.51202, 0, -1.19533, 0, 4.66767, 0, 1.19533, 0, 4.51202, 0.12457, 0.0129898, -0.0200203 )

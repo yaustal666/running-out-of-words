@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author/>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments/>
+    </contributor>
+    <created>2023-01-16T07:14:31Z</created>
+    <keywords/>
+    <modified>2023-01-16T07:14:31Z</modified>
+    <revision/>
+    <subject/>
+    <title/>
+    <unit meter="0.010000" name="centimeter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="lambert1" name="lambert1">
+      <instance_effect url="#lambert1-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert1-fx" name="lambert1">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.400000  0.400000 0.400000 1.000000</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="polySurface5-lib" name="polySurface5Mesh">
+      <mesh>
+        <source id="polySurface5-POSITION">
+          <float_array id="polySurface5-POSITION-array" count="24">
+11.005944 0.328567 11.006572
+11.005944 0.328567 -11.006572
+-10.948708 0.328567 11.006572
+-10.948708 0.328567 -11.006572
+-10.948708 -0.000000 11.006572
+-10.948708 -0.000000 -11.006572
+11.005944 -0.000000 11.006572
+11.005944 -0.000000 -11.006572
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface5-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface5-Normal0">
+          <float_array id="polySurface5-Normal0-array" count="108">
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface5-Normal0-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface5-UV0">
+          <float_array id="polySurface5-UV0-array" count="48">
+0.511144 0.001992
+0.511144 0.498165
+0.503738 0.498165
+0.503738 0.001992
+0.409675 0.998008
+0.409675 0.501835
+0.417081 0.501835
+0.417081 0.998008
+0.496686 0.001992
+0.496686 0.498165
+0.001831 0.498165
+0.001831 0.001992
+0.422722 0.998008
+0.422722 0.501835
+0.917577 0.501835
+0.917577 0.998008
+0.396629 0.501835
+0.404034 0.501835
+0.404034 0.996690
+0.396629 0.996690
+0.383582 0.501835
+0.390988 0.501835
+0.390988 0.996690
+0.383582 0.996690
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface5-UV0-array" count="24" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface5-VERTEX">
+          <input semantic="POSITION" source="#polySurface5-POSITION"/>
+        </vertices>
+        <triangles count="12" material="lambert1">
+          <input semantic="VERTEX" offset="0" source="#polySurface5-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#polySurface5-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#polySurface5-UV0"/>
+          <p> 2 0 11 0 1 8 3 2 10 0 3 8 1 4 9 3 5 10 5 6 2 4 7 3 2 8 0 2 9 0 3 10 1 5 11 2 6 12 15 4 13 12 7 14 14 4 15 12 5 16 13 7 17 14 1 18 6 0 19 7 6 20 4 6 21 4 7 22 5 1 23 6 5 24 18 1 25 16 7 26 17 1 27 16 5 28 18 3 29 19 2 30 22 6 31 20 0 32 21 6 33 20 2 34 22 4 35 23</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="floor" name="floor">
+      <node name="polySurface5" id="polySurface5" sid="polySurface5">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#polySurface5-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert1" target="#lambert1"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>24.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.041667</start_time>
+          <end_time>8.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#floor"/>
+  </scene>
+</COLLADA>

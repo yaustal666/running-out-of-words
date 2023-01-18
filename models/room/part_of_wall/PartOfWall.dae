@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author/>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments/>
+    </contributor>
+    <created>2023-01-16T07:32:01Z</created>
+    <keywords/>
+    <modified>2023-01-16T07:32:01Z</modified>
+    <revision/>
+    <subject/>
+    <title/>
+    <unit meter="0.010000" name="centimeter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="lambert1" name="lambert1">
+      <instance_effect url="#lambert1-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert1-fx" name="lambert1">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.400000  0.400000 0.400000 1.000000</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="partOfWall-lib" name="partOfWallMesh">
+      <mesh>
+        <source id="partOfWall-POSITION">
+          <float_array id="partOfWall-POSITION-array" count="36">
+0.000000 0.544960 4.851325
+0.000000 0.476592 1.156099
+0.000000 2.998012 1.154582
+0.000000 7.107137 2.204115
+0.000000 5.981514 3.462662
+0.250000 0.544960 4.851325
+0.250000 0.476592 1.156099
+0.250000 2.998012 1.154582
+0.250000 7.107137 2.204115
+0.250000 5.981514 3.462662
+0.000000 5.573405 1.709696
+0.250000 5.573405 1.709696
+</float_array>
+          <technique_common>
+            <accessor source="#partOfWall-POSITION-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partOfWall-Normal0">
+          <float_array id="partOfWall-Normal0-array" count="180">
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+0.000000 -0.999829 0.018498
+0.000000 -0.999829 0.018498
+0.000000 -0.999829 0.018498
+0.000000 -0.999829 0.018498
+0.000000 -0.999829 0.018498
+0.000000 -0.999829 0.018498
+0.000000 0.107981 -0.994153
+0.000000 -0.000601 -1.000000
+0.000000 -0.000601 -1.000000
+0.000000 -0.000601 -1.000000
+0.000000 0.107981 -0.994153
+0.000000 0.107981 -0.994153
+0.000000 0.247471 -0.968895
+0.000000 0.107981 -0.994153
+0.000000 0.107981 -0.994153
+0.000000 0.107981 -0.994153
+0.000000 0.247471 -0.968895
+0.000000 0.247471 -0.968895
+0.000000 0.745372 0.666648
+0.000000 0.745372 0.666648
+0.000000 0.745372 0.666648
+0.000000 0.745372 0.666648
+0.000000 0.745372 0.666648
+0.000000 0.745372 0.666648
+0.000000 0.247485 0.968892
+0.000000 0.247485 0.968892
+0.000000 0.247485 0.968892
+0.000000 0.247485 0.968892
+0.000000 0.247485 0.968892
+0.000000 0.247485 0.968892
+0.000000 0.247471 -0.968895
+0.000000 0.306815 -0.951769
+0.000000 0.247471 -0.968895
+0.000000 0.247471 -0.968895
+0.000000 0.306815 -0.951769
+0.000000 0.306815 -0.951769
+</float_array>
+          <technique_common>
+            <accessor source="#partOfWall-Normal0-array" count="60" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partOfWall-UV0">
+          <float_array id="partOfWall-UV0-array" count="60">
+0.001594 0.008609
+0.359258 0.001992
+0.359405 0.246042
+0.305674 0.495317
+0.257819 0.643768
+0.136003 0.534818
+0.722827 0.008609
+0.588417 0.534818
+0.466601 0.643768
+0.418746 0.495317
+0.365016 0.246042
+0.365163 0.001992
+0.774168 0.998008
+0.774168 0.640344
+0.798366 0.640344
+0.798366 0.998008
+0.728282 0.643768
+0.728282 0.399718
+0.752480 0.399718
+0.752480 0.643768
+0.728282 0.150443
+0.752480 0.150443
+0.728282 0.001992
+0.752480 0.001992
+0.757905 0.528201
+0.757905 0.001992
+0.782102 0.001992
+0.782102 0.528201
+0.757905 0.637151
+0.782102 0.637151
+</float_array>
+          <technique_common>
+            <accessor source="#partOfWall-UV0-array" count="30" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="partOfWall-VERTEX">
+          <input semantic="POSITION" source="#partOfWall-POSITION"/>
+        </vertices>
+        <triangles count="20" material="lambert1">
+          <input semantic="VERTEX" offset="0" source="#partOfWall-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#partOfWall-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#partOfWall-UV0"/>
+          <p> 5 0 0 7 1 2 9 2 5 7 3 2 5 4 0 6 5 1 9 6 5 7 7 2 11 8 3 9 9 5 11 10 3 8 11 4 4 12 7 2 13 10 0 14 6 0 15 6 2 16 10 1 17 11 10 18 9 4 19 7 3 20 8 2 21 10 4 22 7 10 23 9 6 24 14 5 25 15 0 26 12 0 27 12 1 28 13 6 29 14 7 30 18 6 31 19 1 32 16 1 33 16 2 34 17 7 35 18 11 36 21 7 37 18 2 38 17 2 39 17 10 40 20 11 41 21 9 42 27 3 43 28 4 44 24 3 45 28 9 46 27 8 47 29 5 48 26 9 49 27 4 50 24 4 51 24 0 52 25 5 53 26 10 54 20 3 55 22 11 56 21 11 57 21 3 58 22 8 59 23</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="PartOfWall" name="PartOfWall">
+      <node name="partOfWall" id="partOfWall" sid="partOfWall">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#partOfWall-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert1" target="#lambert1"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>24.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.041667</start_time>
+          <end_time>8.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#PartOfWall"/>
+  </scene>
+</COLLADA>
